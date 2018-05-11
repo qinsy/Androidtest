@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/play_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play"/>
+
+
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop"/>
+    <Button
+        android:id="@+id/force_offline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send force offline broadcast"/>
+    <FrameLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <fragment
+            android:id="@+id/name_fragment"
+            android:name="com.example.qinsy.firsttasktwo.fragment.NameFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+</LinearLayout>
+
